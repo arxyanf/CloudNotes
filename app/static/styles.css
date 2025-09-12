@@ -1,0 +1,184 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.input-field {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn {
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 5px 0;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.cancel-btn {
+    background-color: #ccc;
+}
+
+.cancel-btn:hover {
+    background-color: #999;
+}
+
+.notes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.note-card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    position: relative;
+}
+
+.note-card:hover {
+    transform: translateY(-5px);
+}
+
+.note-card h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.note-card p {
+    color: #555;
+    white-space: pre-wrap;
+}
+
+.note-actions {
+    margin-top: 10px;
+}
+
+.edit-btn {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 8px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.edit-btn:hover {
+    background-color: #0b7dda;
+}
+
+.delete-btn {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 8px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.delete-btn:hover {
+    background: #ff1a1a;
+}
+
+/* Dark Theme Override */
+body.dark-theme {
+    background: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-theme .container {
+    background: #1e1e1e;
+    box-shadow: 0px 5px 20px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-theme h1, 
+body.dark-theme h2, 
+body.dark-theme .note-card h3 {
+    color: #f0f0f0;
+}
+
+body.dark-theme .note-card {
+    box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-theme .note-card p {
+    color: #ccc;
+}
+
+body.dark-theme .input-field {
+    background-color: #2c2c2c;
+    border: 1px solid #555;
+    color: #e0e0e0;
+}
+
+body.dark-theme .btn {
+    background-color: #3a8fb7;
+    color: white;
+}
+
+body.dark-theme .btn:hover {
+    background-color: #2a6a8e;
+}
+
+body.dark-theme .cancel-btn {
+    background-color: #555;
+}
+
+body.dark-theme .cancel-btn:hover {
+    background-color: #777;
+}
+
+body.dark-theme .edit-btn {
+    background-color: #4a90e2;
+}
+
+body.dark-theme .edit-btn:hover {
+    background-color: #357abd;
+}
+
+body.dark-theme .delete-btn {
+    background: #e55353;
+}
+
+body.dark-theme .delete-btn:hover {
+    background: #d32f2f;
+}
