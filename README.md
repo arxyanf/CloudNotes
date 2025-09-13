@@ -14,3 +14,13 @@ A simple notes application built with **FastAPI**, **HTML (Jinja2 templates)**, 
 - [HTML + CSS] - Frontend
 
 ## 📂 Project Structure
+CloudNotes/
+│── app/
+│ ├── main.py # FastAPI app
+│ ├── templates/
+│ │ └── index.html # HTML template
+│ └── static/
+│ └── styles.css # CSS styles
+│── requirements.txt # Python dependencies
+│── README.md # Project documentation
+│── .gitignore # Files ignored by Git
